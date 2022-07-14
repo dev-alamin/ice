@@ -1,0 +1,749 @@
+/*
+Theme Name: Petapalozza Child
+Theme URI: https://themeforest.net/user/codeecstasy
+Author: A F M Jamal Uddin
+Author URI: http://codeecstasy.com/
+Description: Pet Care Service WordPress Theme
+Version: 201811071.0.5
+Template: petapalozza
+Text Domain: petapalozza-child
+*/
+
+/* Add your custom css below */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+body, body div.site, h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.link-font a {
+    font-size: 16px;
+}
+.pmpro_member_profile_edit-field.pmpro_member_profile_edit-field-.display_name label {position: relative;visibility: hidden;}
+
+.pmpro_member_profile_edit-field.pmpro_member_profile_edit-field-.display_name label::after {content: "Display name";visibility: visible;top: 0;left: 0; position: absolute;}
+
+/** .fldedit a {border: 1px solid #204d74;padding: 2px 7px 2px 7px;background: #204d74; text-decoration: none; color: #fff;} **/
+
+.pageqr a {border: 1px solid #000;background: #cfcfcf;padding: 2px 7px 2px 7px;}
+
+.pageqr a:hover {background: #d1e4dd;}
+td.pageqr a {text-decoration: none;}
+span.btnac {align-items: center;justify-content: center;margin-bottom: 15px;margin-left: 38%; display: inline-block;}
+.button.qrcode {padding: 3px 10px 3px 10px !important; !important; text-transform: inherit !important;text-decoration: none;}
+.single-QR-codeBox ul li img {display: table-row-group;}
+.sharebtn {display: block; margin-left: auto; margin-right: auto; margin-left: 210px;}
+.sharefrnd {padding: 15px 0px 15px 0px;}
+.viewclass {text-align: center;}
+p.section-subheading.subpet {font-family: Georgia, serif;}
+.editfld li.wpuf-submit .wpuf-label {display: none;}
+.editpetInfoBx li.wpuf-submit .wpuf-label {display: none;}
+.site-footer, .site-footer a {border-top: 0px solid #333333;}
+.site-footer, .site-footer a:hover {text-decoration: none;}
+.footerlnk {margin-top: -30px; margin-right: 10px;}
+body .wpuf-attachment-upload-filelist {margin-top: 5px;}
+p.mem_name.qmail {font-weight: 400 !important;}
+
+table > thead > tr > th {border-bottom: 1px solid #ccc !important;}
+
+a.htqr-btn.htqr-btn-print {
+    padding: 5px 45px;
+    background-color: #2e385c;
+    border-color: #2e385c;
+    margin-top: 10px;
+}
+.btnqr {
+    text-align: center;
+}
+.viwcard {
+    display: inline-block;
+    width: 70px;
+}
+.vetinfo {
+    margin-bottom: 10px !important;
+}
+.petinfoList {
+    padding-bottom: 0px;
+}
+.peopelinfo {
+    margin-top: -20px;
+}
+.podbtn hr {border-top: 1px solid #ddd !important;}
+.podbtn {padding-bottom: 10px;}
+
+span.btnac a {
+    background: #2e385c !important;
+    font-size: 16px !important;
+}
+.viwcard.crdimg {width: 95px;}
+
+a.qrcode-download.htqr-btn.htqr-btn-download {
+    font-size: 16px !important;
+    background-color: #2e385c;
+}
+a.qrcode-download.htqr-btn.htqr-btn-download:hover {background-color: #2e385c;}
+.podbtn h3 {padding-bottom: 8px;}
+
+a.htqr-btn.htqr-btn-print {
+    font-size: 16px;
+    padding: 5px 45px!important;
+}
+
+@media only screen and (max-width: 360px) {
+.section-subheading {
+ font-size: 18px !important;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+.section-subheading {display: block !important; font-family: Georgia, serif;
+    font-size: 22px !important; } 
+.sharebtn {margin-left: 130px;}
+}
+.qrclass {margin-top: 20px;}
+a.author-pet-info {border: 1px solid #000; padding: 2px 7px 2px 7px; background: #2E385C; text-decoration: none; color: #fff; font-weight: 600;}
+a.author-pet-info:hover {border: 1px solid #000; padding: 2px 7px 2px 7px; background: #2E385C; text-decoration: none; color: #fff; font-weight: 600;}
+a.author-qrcode {border: 1px solid #000; padding: 2px 7px 2px 7px; background: #2E385C; text-decoration: none;color: #fff; font-weight: 600;}
+a.author-qrcode:hover {border: 1px solid #000; padding: 2px 7px 2px 7px; background: #2E385C; text-decoration: none;color: #fff; font-weight: 600;}
+
+/*.section-subheading {font-family: Georgia, serif !important;}
+ body .wpuf-dashboard-container {font-family: Georgia, serif !important;} 
+.section-heading {font-family: 'Times New Roman', Times,serif !important;}*/
+#bottom h3.widget-title {text-transform: inherit !important;}
+.pmpro_actionlinks a {font-weight: 600 !important;}
+
+.vetlist h2 {background: #f9fafb;}
+.btnqr a:hover {
+    text-decoration: none;
+}
+
+/** Card button Download **/
+
+.btnqr #btn-Convert-Html2Image {
+    background-color: #2e385c;
+    border: 1px solid #2e385c;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 5px;
+    color: #fff;
+}
+.btncard {
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+/** New css card **/
+.mem_det {align-items: center; margin: 25px 0px 15px;}
+.logo_qr h1 {font-size: 21px; margin: 15px 0px 0px;}
+.logo_qr p {font-size: 18px;}
+
+
+/*css by dushyant*/
+.helpOuter{
+    margin-bottom: 40px;
+}
+.helpOuter h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.infprimOutBx{
+	display:block !important;
+}
+.infoprimaryOuter {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+	padding-bottom:3px;
+}
+.infoprimaryOuter .infosecondry {
+    width: calc(100% - 350px);
+}
+.infosecondry .locatedinfo h2 {
+    margin-top: 0;
+}
+.infosecondry h2 {
+    margin-bottom: 15px;
+	font-size: 20px;
+}
+.infosecondry p {
+    font-size: 16px;
+}
+.clearfix:before, .clearfix:after {content:''; display:block; height:0; overflow:hidden;}
+.clearfix:after {clear:both;}
+
+.infoprimary {
+    width: 330px;
+    padding-right: 30px;
+}
+.infoprimary .post-feat-img {
+    width: 100%;
+    margin-bottom: 0 !important;
+    border: #eee solid 1px;
+    padding: 5px;
+    background: #fff;
+}
+.petinfoList {
+    padding: 20px;
+    background: #fff;
+    margin-top: -45px;
+    /** box-shadow: #e5e5e5 0 0 5px -1px; **/
+}
+.petinfoList p {
+    float: left;
+    width: 49%;
+    border-bottom: #e6e6e6 solid 1px;
+    padding-bottom: 10px;
+	font-size: 16px;
+}
+.petinfoList p strong {
+    display: block;
+}
+.petinfoList p:nth-child(2n){
+	float:right;
+}
+.recommandList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.recommandList ul li{
+	width:23.5%;
+	float:left;
+	margin-right:2%;
+	border: #ccc solid 1px;
+    padding: 2px;
+    background: #fff;
+}
+.recommandList ul li:last-child{
+	margin-right:0px;
+}
+.recommandList ul li strong {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    background: #e5e5e5;
+    padding: 10px;
+    line-height: 20px;
+    min-height: 62px;
+}
+.recommandList ul li a {
+    display: block;
+}
+.recommandList ul li a img {
+    width: 100%;
+}
+
+.petfeed span.wpuf-help {margin: -7px 0 0px 0px !important;}
+
+.petinfo span.wpuf-help {margin: -7px 0 0px 0px !important;}
+
+.petinfo2 span.wpuf-help {margin: -7px 0 0px 0px !important;}
+li.wpuf-submit {text-align: center; margin-top: 30px;}
+
+
+
+
+
+
+/*********************3 sep css********************/
+.logo_qr img {
+    width: 100px;
+}
+.logo_qr {
+    text-align: center;
+}
+.logo_qr h1 , .logo_qr p {
+    margin: 0;
+    color: #ff0f14;font-weight: 600;font-family: 'Times New Roman', Times,serif; 
+}
+.logo_qr h1 {
+    font-size: 18px;
+    margin: 10px 0 0px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times,serif !important;
+}
+.logo_qr p {
+    font-size: 16px;
+    margin: 0px 0px 5px;
+    line-height: 1.3;
+    font-family: 'Times New Roman', Times,serif !important;
+}
+.mem_det {
+	
+	width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.mem_det>div:first-child {
+    margin-right: 0px;
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 10px;
+}
+p.mem_name {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.mem_det a {margin: 0;font-size: 15px;text-decoration: none;font-family: 'Times New Roman', Times,serif !important;font-weight: 600;}
+div.cutprint {
+    padding: 15px 15px;
+    border: 1px solid #000;
+    border-width: 1px 1px 1px 1px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: 220px;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.v_center {display: flex;display: -webkit-flex;display: -moz-flexbox;align-items: center;}
+/** .print_btn {
+    color: #ffffff !important;
+    background-color: #204d74;
+    border: 1px solid #204d74;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 25px;
+}
+
+.print_btn:hover {background-color: #204d74;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 30%);
+} **/
+.podbtn a#printButton {
+    color: #2E385C;
+    font-weight: 600;
+}
+
+/*********************6 sep css*********************/
+.main-soc .wpb_wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.fldedit a:hover {color: #000000;}
+
+.main-soc .wpb_wrapper .sharebtn {margin: 0;margin-right: 15px;}
+ .main-soc .wpb_wrapper .sharebtn i {padding: 0!important;
+    width: 80px!important;
+    height: 39px !important;
+    margin: 0 !important;
+}
+.main-soc .wpb_wrapper .sharebtn ul.heateor_sss_sharing_ul {
+    margin: 0px 0!important;
+}
+.main-soc .wpb_wrapper .ctmail.vc_btn3-inline {
+    padding: 0;
+    margin: 0;
+}
+.main-soc .wpb_wrapper .ctmail.vc_btn3-inline .vc_btn3-icon {
+    font-size: 20px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.main-soc .wpb_wrapper .ctmail.vc_btn3-inline .vc_btn3.vc_btn3-color-black.vc_btn3-style-modern {
+    
+    background: #000;
+    border-color: #000;
+}
+.main-soc {
+    margin-bottom: 20px;
+}
+
+.petinfoList {
+    display: flex;display: -webkit-flex;display: -moz-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.petinfoList p {
+    float: none;
+    width: 49%;}
+.petinfoList p:nth-child(odd)   {margin-right: 1%;} 
+.cmcls1, .cmcls2 {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+input {
+    line-height: normal;
+    border: #999 solid 1px;
+}
+
+
+
+
+
+
+
+
+
+/********************************media query **************************************/
+@media(max-width:991px){
+	.site-header .site-logo{
+		max-width:150px;
+	}
+	.infosecondry h2{
+		line-height:27px;
+	}
+	.v_center {flex-wrap: wrap;}
+	.editpetInfoBx {
+		width: 100% !important;
+	}
+	li.wpuf-el.proof_of_vaccinations.petproof.field-size-large {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	li.wpuf-el.pet_medical_insurance.docfld.field-size-large {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	li.wpuf-el.additional_photos_of_your_pet.peteximg.field-size-large {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	li.wpuf-el.upload_medical_records.petmedical.field-size-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+}
+	.section_1929.wpuf_section_break_1929 h2 {
+      font-size: 16px;
+}
+.footerlnk {margin-top: 0px;}
+td.cltbl.amount {padding-right: 64px;}
+td.cltbl.tpd {padding-right: 50px;}
+}
+
+@media(max-width: 768px){
+.v_center>div:first-child {
+    margin-bottom: 30px;}
+.petinfoList p:nth-child(odd) {
+    margin-right: 0;
+}
+.petinfoList p {
+    float: none;
+    width: 100%;
+}
+.recommandList ul li {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 15px;}
+.recommandList ul li:nth-child(even) {
+    margin-right: 0;
+}    
+body ul.wpuf-form .classcurnt .wpuf-label {
+    width: 100% !important;
+} 
+body ul.wpuf-form .classreach .wpuf-label {
+    width: 100%;
+}
+.section_1929.wpuf_section_break_1929 h2 {
+    font-size: 16px;
+}
+.footerlnk {margin-top: 0px;}
+}
+@media (max-width: 767px) {
+ .fldedit a {font-size: 12px !important;}
+ .footerlnk {margin-top: 0px;}
+ div#wpuf-featured_image-1929-upload-container {width: 0px;}
+li.wpuf-el.featured_image.mypetimg.field-size-medium {width: 185px;}
+.editfld ul.wpuf-form li.mypetimg .wpuf-label {
+    width: 150px;
+}
+
+
+td.cltbl.amount {
+    padding-right: 30px !important;
+}
+
+td.cltbl.voice {
+    padding-left: 50px !important;
+}
+
+td.cltbl.tpd {
+    padding-right: 40px !important;
+}
+
+.editfld ul li.wpuf-el.emergency_caregiver_2.field-size-large {
+    margin-top: 10px;
+}
+body ul.wpuf-form li {
+ padding: 0px !important; 
+}
+.editfld ul li.wpuf-el.veterinarian_name.field-size-large {
+    margin-top: 30px;
+}
+.editfld ul li.wpuf-el.emergency_caregiver_1.field-size-large {
+    margin-top: 20px;
+}
+a.htqr-btn.htqr-btn-print {padding: 5px 52px;}
+}
+
+
+@media(max-width:767px){
+	.infprimOutBx {
+		max-width: 100% !important;
+	}
+	.podbtn #printButton {font-size: 14px; padding: 4px 16px;}
+	.infoprimaryOuter{
+		display:block !important;
+	}
+	.infoprimary {
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 20px;
+	}
+	.infoprimaryOuter .infosecondry {
+    	width: 100%;
+	}
+	.petinfoList p {
+    	float: none;
+		width: 100%;
+	}
+	.recommandList ul li {
+		width: 48%;
+		margin-bottom:20px;
+		margin-right:4%;
+	}
+	.recommandList ul li:nth-child(2n) {
+		margin-right:0px;
+	}
+body ul.wpuf-form .classcurnt .wpuf-label {
+    width: 100% !important;
+} 
+body ul.wpuf-form .classreach .wpuf-label {
+    width: 100%;
+}	
+	
+	.editpetInfoBx .column-1.items-of-column-2.wpuf-column-inner-fields, .column-1.items-of-column-2.wpuf-column-inner-fields{
+		width: 100% !important;
+		padding-right: 0 !important;
+	}
+	.editpetInfoBx .column-2.items-of-column-2.wpuf-column-inner-fields, .column-2.items-of-column-2.wpuf-column-inner-fields {
+		width: 100% !important;
+		padding-left: 0 !important;
+		padding-top: 20px !important;
+	}
+	input {
+		line-height: normal;
+		font-size: 14px !important;
+	}
+	textarea {
+		overflow: auto;
+		font-size: 14px !important;
+		padding: 10px;
+	}
+	.editpetInfoBx .wpuf-label{
+		width:100% !important;
+	}
+	.section_1929.wpuf_section_break_1929 h2 {
+      font-size: 16px;
+}
+.petapalozza-breadcrumb-container h1 {font-size: 26px;}
+li.wpuf-el.upload_medical_records.petmedical.field-size-large {
+    margin-right: 7px;
+}
+li.wpuf-el.additional_photos_of_your_pet.peteximg.field-size-large {
+    margin-right: 7px;
+}
+.editfld li.wpuf-el.pet_medical_insurance.docfld.field-size-large {
+    margin-right: 20px;
+}
+.editfld li.wpuf-el.additional_photos_of_your_pet.peteximg.field-size-large {
+    margin-right: 32px;
+}
+
+/** New css for card 
+.single-QR-codeWrap {padding: 15px 0px;}
+	.mem_det>div:first-child {width: calc(100% - 70px); margin-bottom: 0px; padding-right: 10px; text-align: left;}
+	.viwcard {width: 70px;}
+	.logo_qr h1 {margin: 20px 0 0px;}
+	.v_center {display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+	.v_center>div:first-child,
+	.v_center>div:last-child {margin-bottom: 30px; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;} **/
+
+
+}
+@media(max-width:479px){
+	h2.only-heading{
+		font-size:16px;
+	}
+	.fldedit a {font-size: 14px !important;}
+	.helpOuter h2 {
+		margin-bottom: 10px;
+		margin-top: 0;
+		font-size: 26px;
+	}
+	.helpOuter p.section-subheading.subpet {
+    	font-size: 16px;
+	}
+	.infosecondry h2 {
+		line-height:24px;
+		font-size: 16px;
+	}
+	.infosecondry p {
+    	font-size: 14px;
+    	line-height: 22px;
+	}
+	.petinfoList {
+		padding: 15px;
+	}
+	.petinfoList p{
+		font-size:14px;
+	}
+	.recommandList ul li strong{
+		padding:7px 5px;
+		font-size:13px;
+	}
+	.logo_qr img {
+    width: 120px;
+}
+.logo_qr h1 {
+    font-size: 14px;
+    margin: 10px 0 0px}
+.logo_qr p {
+    font-size: 14px;
+}
+.mem_det {/**display: block; **/text-align: center;}    
+.mem_det>div:first-child {margin-bottom: 25px;margin-right: 0;}	
+p.mem_name, .mem_det a {
+    font-size: 13px;
+	line-height: 20px;
+    margin: 0;}
+.v_center>div:last-child {
+    margin: auto;
+}
+.print_btn {
+	margin: auto;
+    width: 100%;
+}
+span.btnac {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+	margin-bottom: 10px;
+}
+.recommandList ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.podbtn #printButton {font-size: 14px; padding: 4px 16px;}
+
+body ul.wpuf-form li .wpuf-fields ul.wpuf-attachment-list {
+    overflow: unset!important;
+}
+body ul.wpuf-form .classcurnt .wpuf-label {
+    width: 100% !important;
+} 
+body ul.wpuf-form .classreach .wpuf-label {
+    width: 100%;
+}
+label.wpuf-radio-inline input {
+    display: inline-block;
+    width: auto !important;
+}
+.editpetInfoBx {
+    margin-left: 0 !important;
+}
+.section_1929.wpuf_section_break_1929 h2 {
+    font-size: 16px;
+}
+
+#pmpro_account .pmpro_box {
+    font-size: 14px;
+}
+	.pmpro_actionlinks a {
+		font-size: 14px;
+	}
+	body a{
+		font-size:14px;
+	}
+	#pmpro_account .pmpro_box h3{
+		font-size:20px;
+	}
+	.pmpro-has-access th, .pmpro-has-access td {
+		font-size: 14px;
+	}
+	#pmpro_levels_table .pmpro_btn {
+		display: block;
+		font-size: 12px;
+	}
+	.petapalozza-breadcrumb-container h1 {font-size: 26px;}
+li.wpuf-el.upload_medical_records.petmedical.field-size-large {
+    margin-right: 7px;
+}
+
+li.wpuf-el.additional_photos_of_your_pet.peteximg.field-size-large {
+    margin-right: 7px;
+}
+.editfld ul li.wpuf-el.emergency_caregiver_2.field-size-large {
+    margin-top: 10px;
+}
+body ul.wpuf-form li {
+ padding: 0px !important; 
+}
+.editfld ul li.wpuf-el.veterinarian_name.field-size-large {
+    margin-top: 30px;
+}
+.editfld ul li.wpuf-el.emergency_caregiver_1.field-size-large {
+    margin-top: 20px;
+}
+a.htqr-btn.htqr-btn-print {padding: 5px 45px !important; font-size: 16px;}
+
+div#wpuf-proof_of_vaccinations-1929-upload-container {
+    margin-left: 10px;
+}
+
+div#wpuf-pet_medical_insurance-1929-upload-container {
+    margin-left: 14px;
+}
+div#wpuf-upload_medical_records-1929-upload-container {
+    margin-left: 12px;
+}
+
+div#wpuf-additional_photos_of_your_pet-1929-upload-container {
+    margin-left: 18px;
+}
+/** New  css for card **/
+.v_center .col-md-8.col-sm-12 {
+    width: 100%;
+}
+
+}
+
+
+@media print {
+     .logo_qr h1, .logo_qr p{ -webkit-print-color-adjust: exact; color:#ff0f14 !important;} 
+     .viwcard { display: block;margin: auto;}
+}
+
+@media (max-width: 767px) {
+.single-QR-codeBox .v_center {display: block !important;}
+div.cutprint {width: 240px; max-width: unset; height: 336px; padding: 15px 5px;}
+.logo_qr {text-align: center; margin-bottom: 20px;} 
+.logo_qr h1 {font-size: 13px; margin: 20px 0 0px;}
+.logo_qr p {font-size: 13px;}
+.viwcard.crdimg {width: 100px; display: block; margin: auto;}
+.viwcard {display: block;}
+
+.wpuf-dashboard-container h3 {font-size: 20px;}
+.podbtn h3 {font-size: 20px;}
+td.pmpro_account-membership-expiration {padding-top: 16px;}
+}
+
+
+
