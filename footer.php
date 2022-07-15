@@ -55,7 +55,7 @@
                                     $credit_notes = "";
                                 }
 
-                                echo $credit_notes;
+                                echo esc_html( $credit_notes );
                                 ?>
                             <div class="footerlnk">
                 <?php if (has_nav_menu('footer-menu', 'petapalozza')) : ?>
@@ -81,7 +81,9 @@
     </div> <!-- end .bottom-footer-container-overlay  -->
 </div> <!-- end .bottom-footer-container  -->
 </div><!-- #page -->
-<?php wp_footer(); ?>
+<?php 
+wp_body_open();
+wp_footer(); ?>
 <script src="<?php echo get_stylesheet_directory_uri() . '/assets/js/jquery.PrintArea.min.js' ?>"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/PrintArea/2.4.1/jquery.PrintArea.min.js"></script> -->
 <script language="javascript">

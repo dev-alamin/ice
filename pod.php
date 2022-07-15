@@ -21,7 +21,7 @@ input.pod-submit {padding: 9px 15px 9px 15px;font-weight: 600;background: #2E385
 <input type='submit' value='Submit' class="pod-submit">
 </form>
 <?php $author = $_GET['pid']; ?>
-<div class="qrclass" id="qrid<?php echo $author ?>">  
+<div class="qrclass" id="qrid<?php echo esc_html( $author ) ?>">  
 <?php
 $args = array(
     'post_type' => 'qrcode',

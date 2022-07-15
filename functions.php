@@ -31,9 +31,9 @@ function aki_service_posttype() {
   register_post_type('qrcode',
     array(
       'labels' => array(
-        'name' => __( 'QrCode'),
+        'name' => __( 'QrCode', 'petapalozza '),
 		'post_status' => 'publish',
-        'singular_name' => __( 'qrcode' )
+        'singular_name' => __( 'qrcode', 'petapalozza ' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -106,7 +106,7 @@ add_filter( 'auth_cookie_expiration', 'myplugin_cookie_expiration', 99, 3 );
 add_filter( 'manage_qrcode_posts_columns', 'set_custom_edit_qrcode_columns' );
 function set_custom_edit_qrcode_columns($columns) {
     // unset( $columns['author'] );
-     $columns['qr_code_url'] = __( 'Qr Code' );
+     $columns['qr_code_url'] = __( 'Qr Code', 'petapalozza' );
     // $columns['publisher'] = __( 'Publisher', 'your_text_domain' );
 
      return $columns;
@@ -120,7 +120,7 @@ function custom_qrcode_column( $column, $post_id ) {
         case 'qr_code_url' :
             $terms = get_post_meta( $post_id , 'qr_code_url' , true);
             if ($terms)
-                echo $terms;
+                echo esc_html( $terms );
             else
                 _e( 'Null', 'your_text_domain' );
             break;
@@ -134,7 +134,7 @@ function custom_qrcode_column( $column, $post_id ) {
 add_filter( 'manage_qrcode_posts_columns', 'set_custom_edit_qrcode_columns2' );
 function set_custom_edit_qrcode_columns2($columns) {
     // unset( $columns['author'] );
-     $columns['pod_status'] = __( 'POD Status' );
+     $columns['pod_status'] = __( 'POD Status', 'petapalozza' );
     // $columns['publisher'] = __( 'Publisher', 'your_text_domain' );
 
      return $columns;
@@ -224,7 +224,7 @@ $shipping_postcode_val = update_post_meta( $current_user_posts[0]->ID , '_shippi
 			$terms = get_post_meta( $post_id , 'pod_apply' );
 			//print_r($terms);
             if ($terms)
-                echo $terms[0];
+                echo esc_html( $terms[0] );
             else
                 _e( 'Null', 'your_text_domain' );
             break;
@@ -451,5 +451,4 @@ function my_retrieve_password_message( $msg, $key, $user_login, $user_data ) {
   return $msg;
 
 }
-
 

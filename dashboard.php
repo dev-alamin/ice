@@ -154,7 +154,7 @@
                                 <?php } else { ?>
 
                                     <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'wp-user-frontend' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-                                   <?php  $page_slug = $post->post_name; echo $page_slug; ?>
+                                   <?php  $page_slug = $post->post_name; echo esc_html( $page_slug ); ?>
                                     
 
                                 <?php } ?>
@@ -195,7 +195,7 @@
                                         if ( $meta_key[$j] == $meta_name[$i] ) {
                                             echo '<td>';
                                             $m_val = get_post_meta( $post->ID, $meta_name[$i], true );
-                                            echo $m_val;
+                                            echo esc_html( $m_val );
                                             echo '</td>';
                                         }
                                     }
@@ -259,7 +259,7 @@
                                             $del_url = add_query_arg( array('action' => 'del', 'pid' => $post->ID) );
                                             $message = __( 'Are you sure to delete?', 'wp-user-frontend' );
                                             ?>
-                                            <a href="<?php echo wp_nonce_url( $del_url, 'wpuf_del' ) ?>" onclick="return confirm('<?php echo $message ?>');"><span style="color: red;"><?php _e( 'Delete', 'wp-user-frontend' ); ?></span></a>
+                                            <a href="<?php echo wp_nonce_url( $del_url, 'wpuf_del' ) ?>" onclick="return confirm('<?php echo esc_html( $message ) ?>');"><span style="color: red;"><?php _e( 'Delete', 'wp-user-frontend' ); ?></span></a>
                                         <?php }  ?>
                                     </td>
 
@@ -299,7 +299,7 @@
                     ) );
 
                     if ( $pagination ) {
-                        echo $pagination;
+                        echo esc_html( $pagination );
                     }
                     ?>
                 </div>

@@ -109,9 +109,9 @@ foreach($customer_orders as $order ){
         
          <tbody>
          <tr id="tblpod">
-         <td><?php echo $date_obj->date('F d Y'); ?></td>
+         <td><?php echo esc_html( $date_obj->date('F d Y') ); ?></td>
          <td class="cltbl voice">Member Card</td>
-         <td class="cltbl amount">$<?php echo $order->get_total(); ?></td>
+         <td class="cltbl amount">$<?php echo esc_html( $order->get_total() ); ?></td>
          <td class="cltbl tpd">Paid</td>
          </tr>
          </tbody>

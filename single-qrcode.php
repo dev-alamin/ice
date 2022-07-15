@@ -334,7 +334,7 @@ a#printButton {color: #ffffff !important; background-color: #2e385c;border: 1px 
 		        <div class="mem_det">
 				  <div class="viwcard">
 				  <?php $fname = get_the_author_meta('first_name'); $lname = get_the_author_meta('last_name'); ?>
-				  <p class="mem_name">Member: <?php echo $fname; ?> <?php echo $lname; ?> </p>
+				  <p class="mem_name">Member: <?php echo esc_html( $fname ); ?> <?php echo esc_html( $lname ); ?> </p>
 				   <p class="mem_name qmail"> www.icepetcare.com </p>
 				  </div>
 				  
